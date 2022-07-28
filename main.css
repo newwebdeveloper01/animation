@@ -1,0 +1,81 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:  sakrash 5s linear infinite;
+}
+.aylana{
+    /* position: relative; */
+    margin-top: 300px;
+    background-color: darkslategray;
+    width: 200px;
+    height: 200px;
+    border: 5px solid transparent;
+    border-top-color:red ;
+    border-bottom-color:red ;
+    border-radius: 50%;
+    animation: aylantir 1s linear infinite;
+    
+}
+.title > h2{
+    position: absolute;
+    animation: rang 1s linear infinite;  
+    top: 165px;
+    left: 165px;
+}
+@keyframes aylantir {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes rang {
+    0%{
+        color: aqua;
+    }
+    50%{
+        color: aquamarine;
+    }
+    100%{
+        color: bisque;
+    }
+    
+}
+@keyframes sakrash {
+    0%{
+        transform: translateX(0px) translateY(0px);
+        
+    }
+    20%{
+        
+        transform: translateX(0px) translateY(400px);
+    }
+    40%{
+        transform: translateX(200px) translateY(50px);
+    }
+    60%{
+        transform: translateX(400px) translateY(400px);
+    }
+    85%{
+        transform: translateX(600px) translateY(100px);
+    }
+    90%{
+        transform: translateX(800px) translateY(400px);
+    }
+    100%{
+        transform: translateX(2000px) translateY(0px);
+    }
+}
